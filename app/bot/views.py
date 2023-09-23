@@ -18,7 +18,6 @@ TEMP_VARS = {
 
 # Create your views here.
 def index(request):
-    print(request)
     body = json.loads(request.body)
     tgid = body["message"]["from"]["id"]
     chat_id = body["message"]["chat"]["id"]
